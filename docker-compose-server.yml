@@ -1,0 +1,16 @@
+version: '3.2'
+
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: node build/bundle.js
+    ports:
+      - '3005:3005'
+    networks:
+      - pw-fe-net
+
+networks:
+  pw-fe-net:
+    driver: bridge

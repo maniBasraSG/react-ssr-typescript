@@ -1,0 +1,6 @@
+PORT=3005
+MODE=development
+BASE_API=
+SENTRY=
+
+
